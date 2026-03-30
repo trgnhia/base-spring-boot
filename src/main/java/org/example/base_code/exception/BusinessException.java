@@ -1,8 +1,12 @@
 package org.example.base_code.exception;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.example.base_code.enums.ErrorCode;
 import org.springframework.http.HttpStatus;
 
+@Getter
+@Setter
 public class BusinessException extends RuntimeException {
     private final HttpStatus status;
     private final ErrorCode errCode;
