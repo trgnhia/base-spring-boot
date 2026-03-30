@@ -17,6 +17,7 @@ public class ApiResponse<T> {
     private String errorCode;
     private boolean success;
 
+
     public static <T> ApiResponse<T> success (int status, T data, String message) {
         return ApiResponse.<T>builder()
                 .status(status)
